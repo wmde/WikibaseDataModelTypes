@@ -1,0 +1,32 @@
+{
+	"name": "wikibase-frontend-datamodel-types",
+	"version": "0.0.1",
+	"description": "Typescript definitions for the Wikibase DataModel expressed as flat JS objects",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "npm run lint",
+		"lint": "eslint . --ext .json",
+		"fix": "npm run lint -- --fix",
+		"build": "tsc"
+	},
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wmde/WikibaseFrontendDataModelTypes.git"
+	},
+	"author": "Wikibase Developers",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/wmde/WikibaseFrontendDataModelTypes/issues"
+	},
+	"homepage": "https://github.com/wmde/WikibaseFrontendDataModelTypes#readme",
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^2.15.0",
+		"@typescript-eslint/parser": "^2.15.0",
+		"@wmde/eslint-config-wikimedia-typescript": "^0.1.1",
+		"eslint-config-wikimedia": "^0.15.0",
+		"typescript": "^3.7.4"
+	}
+}
