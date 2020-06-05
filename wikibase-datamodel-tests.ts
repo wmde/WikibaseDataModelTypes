@@ -2,26 +2,22 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
 import {
-	DataType,
-	DataValueType,
-	Rank,
-	SnakType,
 	Statement,
 	StatementMap,
 } from '.';
 
 const douglasAdamsStatement: Statement = {
 	mainsnak: {
-		snaktype: SnakType.value,
+		snaktype: 'value',
 		property: 'P373',
-		datatype: DataType.string,
+		datatype: 'string',
 		datavalue: {
-			type: DataValueType.string,
+			type: 'string',
 			value: 'Douglas Adams',
 		},
 	},
 	type: 'statement',
-	rank: Rank.normal,
+	rank: 'normal',
 };
 
 const douglasAdamsStatements: StatementMap = {

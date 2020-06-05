@@ -1,21 +1,13 @@
-export const enum DataType {
-	string = 'string',
-}
+export type DataType = 'string';
 
-export const enum DataValueType {
-	string = 'string',
-}
+export type DataValueType = 'string';
 
 export interface DataValue {
 	type: DataValueType;
 	value: string;
 }
 
-export const enum SnakType {
-	value = 'value',
-	somevalue = 'somevalue',
-	novalue = 'novalue',
-}
+export type SnakType = 'value' | 'somevalue' | 'novalue';
 
 export interface Snak {
 	snaktype: SnakType;
@@ -43,11 +35,7 @@ export interface Reference {
 	'snaks-order': string[];
 }
 
-export const enum Rank {
-	preferred = 'preferred',
-	normal = 'normal',
-	deprecated = 'deprecated',
-}
+export type Rank = 'preferred' | 'normal' | 'deprecated';
 
 export interface Statement {
 	id?: string; // absent in newly created statements (fresh ID assigned server-side on save)

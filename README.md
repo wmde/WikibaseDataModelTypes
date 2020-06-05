@@ -6,15 +6,4 @@ as returned and accepted by Wikibase APIs like wbgetentities or wbeditentity.
 ## Scope
 
 For now, the definitions in this repository are very limited.
-However, you can always augment them through [declaration merging][],
-for example:
-
-```
-namespace '@wmde/wikibase-datamodel-types' {
-	const enum DataType {
-		url = 'url',
-	}
-}
-```
-
-[declaration merging]: https://www.typescriptlang.org/docs/handbook/declaration-merging.html
+Feel free to send pull requests for other data (value) types.
