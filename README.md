@@ -16,3 +16,5 @@ namespace '@wmde/wikibase-datamodel-types' {
 	}
 }
 ```
+
+[declaration merging]: https://www.typescriptlang.org/docs/handbook/declaration-merging.html
