@@ -4,6 +4,7 @@
         "module": "commonjs",
         "types": [],
         "noEmit": true,
+        "isolatedModules": true,
         "forceConsistentCasingInFileNames": true
     },
     "files": [
