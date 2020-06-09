@@ -27,5 +27,10 @@
 		"@wmde/eslint-config-wikimedia-typescript": "^0.1.1",
 		"eslint-config-wikimedia": "^0.15.3",
 		"typescript": "^3.9.3"
-	}
+	},
+	"keywords": [
+		"wikibase",
+		"wikidata",
+		"typescript"
+	]
 }
