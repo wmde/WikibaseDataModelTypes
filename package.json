@@ -16,7 +16,7 @@
 		"url": "git+https://github.com/wmde/WikibaseDataModelTypes.git"
 	},
 	"author": "The Wikidata team",
-	"license": "MIT",
+	"license": "BSD-3-Clause",
 	"bugs": {
 		"url": "https://github.com/wmde/WikibaseDataModelTypes/issues"
 	},
