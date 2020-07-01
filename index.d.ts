@@ -69,3 +69,16 @@ export interface Fingerprintable {
 	descriptions: TermList;
 	aliases: AliasesList;
 }
+
+export interface Language {
+	code: string;
+	directionality: string;
+}
+
+export interface LanguageCollection {
+	[code: string]: Language;
+}
+
+export interface StringTMap<T> { [key: string]: T }
+
+export interface LanguageTranslations extends StringTMap<StringTMap<string>> {}
