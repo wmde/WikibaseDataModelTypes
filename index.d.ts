@@ -50,3 +50,22 @@ export interface Statement {
 export interface StatementMap {
 	[ propertyId: string ]: Statement[];
 }
+
+export interface Term {
+	language: string;
+	value: string;
+}
+
+export interface TermList {
+	[language: string]: Term;
+}
+
+export interface AliasesList {
+	[language: string]: Term[];
+}
+
+export interface Fingerprintable {
+	labels: TermList;
+	descriptions: TermList;
+	aliases: AliasesList;
+}
