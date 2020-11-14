@@ -9,6 +9,11 @@
     },
     "files": [
         "index.d.ts",
-        "wikibase-datamodel-tests.ts"
+        "tests/wikibase-datamodel-tests.ts",
+        "tests/Berlin.ts",
+        "tests/BoltzmannConstant.ts",
+        "tests/DouglasAdams.ts",
+        "tests/NewYorkCity.ts",
+        "tests/Vanaspati.ts",
     ]
 }
