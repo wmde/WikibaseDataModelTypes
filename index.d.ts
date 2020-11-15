@@ -122,6 +122,8 @@ export type SnakType = 'value' | 'somevalue' | 'novalue';
 interface Snak {
 	snaktype: SnakType;
 	property: string;
+	datavalue?: Record<string, unknown>;
+	datatype: string;
 }
 
 export interface StringSnak extends Snak {
