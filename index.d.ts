@@ -41,10 +41,10 @@ export interface StatementMap {
 }
 
 export type Snaks = CommonsMediaSnak
-| globeCoordinateSnak
+| GlobeCoordinateSnak
 | MonolingualTextSnak
 | QuantitySnak
-| stringSnak
+| StringSnak
 | TimeSnak
 | URLSnak
 | WikibaseItemSnak
@@ -53,8 +53,6 @@ export type Snaks = CommonsMediaSnak
 | MathSnak
 | TabularDataSnak
 | MusicalNotationSnak;
-
-
 
 export interface Statement {
 	mainsnak: Snaks;
@@ -66,14 +64,13 @@ export interface Statement {
 	references?: (Reference)[] | null;
 }
 
-
 export type Qualifier<T> = T & {hash: string};
 
 export type QualifierSnaks = Qualifier<CommonsMediaSnak>
-| Qualifier<globeCoordinateSnak>
+| Qualifier<GlobeCoordinateSnak>
 | Qualifier<MonolingualTextSnak>
 | Qualifier<QuantitySnak>
-| Qualifier<stringSnak>
+| Qualifier<StringSnak>
 | Qualifier<TimeSnak>
 | Qualifier<URLSnak>
 | Qualifier<WikibaseItemSnak>
@@ -127,7 +124,7 @@ interface Snak {
 	property: string;
 }
 
-export interface stringSnak extends Snak {
+export interface StringSnak extends Snak {
 	datavalue?: {
 		value: string;
 		type: string;
@@ -203,7 +200,7 @@ export interface QuantitySnak extends Snak {
 	datatype: "quantity";
 }
 
-export interface globeCoordinateSnak extends Snak {
+export interface GlobeCoordinateSnak extends Snak {
 	datavalue?: {
 		value: {
 			latitude: number;
