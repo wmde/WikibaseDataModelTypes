@@ -10,7 +10,7 @@ export interface Item {
 	title: string;
 	lastrevid: number;
 	modified: string;
-	type: string;
+	type: "item";
 	id: string;
 	labels: Labels;
 	descriptions: Descriptions;
@@ -28,7 +28,7 @@ export interface Descriptions {
 }
 
 export interface Aliases {
-	[language: string]: LabelAndDiscription[] | null;
+	[language: string]: LabelAndDiscription[];
 }
 
 export interface LabelAndDiscription {
@@ -37,7 +37,7 @@ export interface LabelAndDiscription {
 }
 
 export interface StatementMap {
-	[propery: string]: (Statement)[] | null;
+	[propery: string]: (Statement)[];
 }
 
 export type Snaks = CommonsMediaSnak
@@ -60,8 +60,8 @@ export interface Statement {
 	id?: string;
 	rank: "normal" | "deprecated" | "preferred";
 	qualifiers?: Qualifiers;
-	"qualifiers-order"?: (string)[] | null;
-	references?: (Reference)[] | null;
+	"qualifiers-order"?: (string)[];
+	references?: (Reference)[];
 }
 
 export type Qualifier<T> = T & {hash: string};
@@ -81,17 +81,17 @@ export type QualifierSnaks = Qualifier<CommonsMediaSnak>
 | Qualifier<MusicalNotationSnak>;
 
 export interface Qualifiers {
-	[property: string]: QualifierSnaks[] | null
+	[property: string]: QualifierSnaks[]
 }
 
 export interface Reference {
 	hash: string;
 	snaks: ReferenceSnaks;
-	"snaks-order"?: (string)[] | null;
+	"snaks-order"?: (string)[];
 }
 
 export interface ReferenceSnaks {
-	[properyId: string]: (Snaks)[] | null;
+	[properyId: string]: (Snaks)[];
 }
 
 export interface Sitelinks {
@@ -101,7 +101,7 @@ export interface Sitelinks {
 export interface SiteLink {
 	site: string;
 	title: string;
-	badges?: (string)[] | null;
+	badges?: (string)[];
 	url: string;
 }
 
@@ -154,6 +154,7 @@ export interface WikibaseItemSnak extends Snak {
 	datatype: "wikibase-item";
 }
 
+export type CalendarModels = 'http://www.wikidata.org/entity/Q1985727' | 'http://www.wikidata.org/entity/Q1985786';
 
 export interface TimeSnak extends Snak {
 	datavalue?: {
@@ -163,7 +164,7 @@ export interface TimeSnak extends Snak {
 			before: number;
 			after: number;
 			precision: number;
-			calendarmodel: string;
+			calendarmodel: CalendarModels
 		};
 		type: "time";
 	};
