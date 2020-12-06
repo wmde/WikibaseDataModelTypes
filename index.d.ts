@@ -20,24 +20,24 @@ export interface Item {
 }
 
 export interface Labels {
-	[language: string]: LabelAndDiscription;
+	[language: string]: LabelAndDescription;
 }
 
 export interface Descriptions {
-	[language: string]: LabelAndDiscription;
+	[language: string]: LabelAndDescription;
 }
 
 export interface Aliases {
-	[language: string]: LabelAndDiscription[];
+	[language: string]: LabelAndDescription[];
 }
 
-export interface LabelAndDiscription {
+export interface LabelAndDescription {
 	language: string;
 	value: string;
 }
 
 export interface StatementMap {
-	[propery: string]: (Statement)[];
+	[property: string]: (Statement)[];
 }
 
 export type Snaks = CommonsMediaSnak
@@ -91,7 +91,7 @@ export interface Reference {
 }
 
 export interface ReferenceSnaks {
-	[properyId: string]: (Snaks)[];
+	[propertyId: string]: (Snaks)[];
 }
 
 export interface Sitelinks {
