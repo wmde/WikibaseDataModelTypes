@@ -64,24 +64,8 @@ export interface Statement {
 	references?: Reference[];
 }
 
-export type Qualifier<T> = T & {hash: string};
-
-export type QualifierSnaks = Qualifier<CommonsMediaSnak>
-| Qualifier<GlobeCoordinateSnak>
-| Qualifier<MonolingualTextSnak>
-| Qualifier<QuantitySnak>
-| Qualifier<StringSnak>
-| Qualifier<TimeSnak>
-| Qualifier<URLSnak>
-| Qualifier<WikibaseItemSnak>
-| Qualifier<ExternalIdentifierSnak>
-| Qualifier<GeoShapeSnak>
-| Qualifier<MathSnak>
-| Qualifier<TabularDataSnak>
-| Qualifier<MusicalNotationSnak>;
-
 export interface Qualifiers {
-	[property: string]: QualifierSnaks[]
+	[property: string]: Snak[]
 }
 
 export interface Reference {
@@ -122,6 +106,7 @@ export type SnakType = 'value' | 'somevalue' | 'novalue';
 interface Snak {
 	snaktype: SnakType;
 	property: string;
+	hash?: string,
 	datavalue?: Record<string, unknown>;
 	datatype: string;
 }
