@@ -37,7 +37,7 @@ export interface LabelAndDescription {
 }
 
 export interface StatementMap {
-	[property: string]: (Statement)[];
+	[property: string]: Statement[];
 }
 
 export type Snaks = CommonsMediaSnak
@@ -60,8 +60,8 @@ export interface Statement {
 	id?: string;
 	rank: "normal" | "deprecated" | "preferred";
 	qualifiers?: Qualifiers;
-	"qualifiers-order"?: (string)[];
-	references?: (Reference)[];
+	"qualifiers-order"?: string[];
+	references?: Reference[];
 }
 
 export type Qualifier<T> = T & {hash: string};
@@ -87,11 +87,11 @@ export interface Qualifiers {
 export interface Reference {
 	hash: string;
 	snaks: ReferenceSnaks;
-	"snaks-order"?: (string)[];
+	"snaks-order"?: string[];
 }
 
 export interface ReferenceSnaks {
-	[propertyId: string]: (Snaks)[];
+	[propertyId: string]: Snaks[];
 }
 
 export interface Sitelinks {
@@ -101,7 +101,7 @@ export interface Sitelinks {
 export interface SiteLink {
 	site: string;
 	title: string;
-	badges?: (string)[];
+	badges?: string[];
 	url: string;
 }
 
