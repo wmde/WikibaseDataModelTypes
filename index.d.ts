@@ -1,3 +1,6 @@
+import {LabelLanguages} from './LabelLanguages';
+import {MonolingualLanguages} from './MonolingualLanguages';
+
 export interface WikidataResponse {
 	entities: {
 		[id: string]: Item;
@@ -32,7 +35,7 @@ export interface Aliases {
 }
 
 export interface LabelAndDescription {
-	language: string;
+	language: LabelLanguages;
 	value: string;
 }
 
@@ -160,7 +163,7 @@ export interface MonolingualTextSnak extends Snak {
 	datavalue?: {
 		value: {
 			text: string;
-			language: string;
+			language: MonolingualLanguages;
 		};
 		type: "monolingualtext";
 	};
