@@ -55,7 +55,8 @@ export type Snaks = CommonsMediaSnak
 | GeoShapeSnak
 | MathSnak
 | TabularDataSnak
-| MusicalNotationSnak;
+| MusicalNotationSnak
+| WikibasePropertySnak;
 
 export interface Statement {
 	mainsnak: Snaks;
@@ -243,4 +244,16 @@ export interface MusicalNotationSnak extends Snak {
 		type: string
 	};
 	datatype: "musical-notation";
+}
+
+export interface WikibasePropertySnak extends Snak {
+	datavalue?: {
+		value: {
+			"entity-type": "property",
+			"numeric-id": number,
+			id: string
+		},
+		"type": "wikibase-entityid"
+	};
+	datatype: "wikibase-property";
 }
