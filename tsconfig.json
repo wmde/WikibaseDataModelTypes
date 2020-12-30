@@ -10,10 +10,15 @@
     "files": [
         "index.d.ts",
         "tests/wikibase-datamodel-tests.ts",
+        "tests/Android.ts",
         "tests/Berlin.ts",
         "tests/BoltzmannConstant.ts",
         "tests/DouglasAdams.ts",
+        "tests/Human.ts",
+        "tests/Marooned.ts",
         "tests/NewYorkCity.ts",
+        "tests/ScientificArticle.ts",
+        "tests/UnitedStatesOfAmerica.ts",
         "tests/Vanaspati.ts",
     ]
 }

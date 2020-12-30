@@ -90,7 +90,7 @@ export interface SiteLink {
 	site: string;
 	title: string;
 	badges?: string[];
-	url: string;
+	url?: string;
 }
 
 
