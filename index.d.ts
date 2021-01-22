@@ -118,7 +118,7 @@ interface Snak {
 export interface StringSnak extends Snak {
 	datavalue?: {
 		value: string;
-		type: string;
+		type: "string";
 	};
 	datatype: "string";
 }
@@ -126,7 +126,7 @@ export interface StringSnak extends Snak {
 export interface URLSnak extends Snak {
 	datavalue?: {
 		value: string;
-		type: string;
+		type: "string";
 	};
 	datatype: "url";
 }
@@ -134,7 +134,7 @@ export interface URLSnak extends Snak {
 export interface WikibaseItemSnak extends Snak {
 	datavalue?: {
 		value: {
-			"entity-type": string;
+			"entity-type": "item";
 			"numeric-id": number;
 			id: string;
 		};
@@ -174,7 +174,7 @@ export interface MonolingualTextSnak extends Snak {
 export interface ExternalIdentifierSnak extends Snak {
 	datavalue?: {
 		value: string;
-		type: string;
+		type: "string";
 	};
 	datatype: "external-id";
 }
@@ -209,7 +209,7 @@ export interface GlobeCoordinateSnak extends Snak {
 export interface CommonsMediaSnak extends Snak {
 	datavalue?: {
 		value: string
-		type: string
+		type: "string"
 	};
 	datatype: "commonsMedia";
 }
@@ -217,7 +217,7 @@ export interface CommonsMediaSnak extends Snak {
 export interface GeoShapeSnak extends Snak {
 	datavalue?: {
 		value: string,
-		type: string
+		type: "string"
 	};
 	datatype: "geo-shape";
 }
@@ -225,7 +225,7 @@ export interface GeoShapeSnak extends Snak {
 export interface MathSnak extends Snak {
 	datavalue?: {
 		value: string,
-		type: string
+		type: "string"
 	};
 	datatype: "math";
 }
@@ -233,7 +233,7 @@ export interface MathSnak extends Snak {
 export interface TabularDataSnak extends Snak {
 	datavalue?: {
 		value: string,
-		type: string
+		type: "string"
 	};
 	datatype: "tabular-data";
 }
@@ -241,7 +241,7 @@ export interface TabularDataSnak extends Snak {
 export interface MusicalNotationSnak extends Snak {
 	datavalue?: {
 		value: string,
-		type: string
+		type: "string"
 	};
 	datatype: "musical-notation";
 }
