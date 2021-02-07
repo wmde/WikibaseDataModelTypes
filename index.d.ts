@@ -73,7 +73,7 @@ export interface Qualifiers {
 }
 
 export interface Reference {
-	hash: string;
+	hash?: string;
 	snaks: ReferenceSnaks;
 	"snaks-order"?: string[];
 }
