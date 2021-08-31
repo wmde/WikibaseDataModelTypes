@@ -41,6 +41,7 @@ export type LabelLanguages = 'aa' |
 'bbc' | 
 'bbc-latn' | 
 'bcc' | 
+'bci' | 
 'bcl' | 
 'be' | 
 'be-tarask' | 
@@ -85,6 +86,7 @@ export type LabelLanguages = 'aa' |
 'cv' | 
 'cy' | 
 'da' | 
+'dag' | 
 'de' | 
 'de-at' | 
 'de-ch' | 
@@ -142,6 +144,8 @@ export type LabelLanguages = 'aa' |
 'grc' | 
 'gsw' | 
 'gu' | 
+'guc' | 
+'guw' | 
 'gv' | 
 'ha' | 
 'hak' | 
@@ -186,6 +190,7 @@ export type LabelLanguages = 'aa' |
 'kbd' | 
 'kbd-cyrl' | 
 'kbp' | 
+'kcg' | 
 'kea' | 
 'kg' | 
 'khw' | 
@@ -265,6 +270,7 @@ export type LabelLanguages = 'aa' |
 'mrh' | 
 'mrj' | 
 'ms' | 
+'ms-arab' | 
 'mt' | 
 'mus' | 
 'mwl' | 
@@ -296,6 +302,7 @@ export type LabelLanguages = 'aa' |
 'ny' | 
 'nys' | 
 'oc' | 
+'ojb' | 
 'olo' | 
 'om' | 
 'or' | 
@@ -319,11 +326,13 @@ export type LabelLanguages = 'aa' |
 'ps' | 
 'pt' | 
 'pt-br' | 
+'pwn' | 
 'qu' | 
 'qug' | 
 'rgn' | 
 'rif' | 
 'rm' | 
+'rmc' | 
 'rmf' | 
 'rmy' | 
 'rn' | 
@@ -357,6 +366,7 @@ export type LabelLanguages = 'aa' |
 'shi-latn' | 
 'shi-tfng' | 
 'shn' | 
+'shy' | 
 'shy-latn' | 
 'si' | 
 'simple' | 
@@ -403,6 +413,7 @@ export type LabelLanguages = 'aa' |
 'tk' | 
 'tl' | 
 'tly' | 
+'tly-cyrl' | 
 'tn' | 
 'to' | 
 'tpi' | 
@@ -438,6 +449,7 @@ export type LabelLanguages = 'aa' |
 'vro' | 
 'wa' | 
 'war' | 
+'wls' | 
 'wo' | 
 'wuu' | 
 'xal' | 
@@ -463,4 +475,47 @@ export type LabelLanguages = 'aa' |
 'zh-tw' | 
 'zh-yue' | 
 'zu' | 
-'dag';
+'bag' | 
+'bas' | 
+'bax' | 
+'bbj' | 
+'bfd' | 
+'bkc' | 
+'bkh' | 
+'bkm' | 
+'bqz' | 
+'byv' | 
+'cak' | 
+'cnh' | 
+'dua' | 
+'en-us' | 
+'eto' | 
+'etu' | 
+'ewo' | 
+'fmp' | 
+'gya' | 
+'isu' | 
+'ker' | 
+'ksf' | 
+'lem' | 
+'lns' | 
+'mcp' | 
+'mua' | 
+'nan-hani' | 
+'nge' | 
+'nla' | 
+'nmg' | 
+'nnh' | 
+'nnz' | 
+'osa-latn' | 
+'pap-aw' | 
+'quc' | 
+'ryu' | 
+'tvu' | 
+'vut' | 
+'wes' | 
+'wya' | 
+'yas' | 
+'yat' | 
+'yav' | 
+'ybb';
