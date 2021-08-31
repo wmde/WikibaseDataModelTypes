@@ -110,7 +110,7 @@ export interface SiteLink {
 
 export type SnakType = 'value' | 'somevalue' | 'novalue';
 
-interface Snak {
+export interface Snak {
 	snaktype: SnakType;
 	property: string;
 	hash?: string,
