@@ -1,6 +1,9 @@
 import {LabelLanguages} from './LabelLanguages';
 import {MonolingualLanguages} from './MonolingualLanguages';
 
+export {LabelLanguages} from './LabelLanguages';
+export {MonolingualLanguages} from './MonolingualLanguages';
+
 export interface WikidataResponse {
 	entities: {
 		[id: string]: Item;
