@@ -4,7 +4,9 @@
 	"description": "TypeScript definitions for the Wikibase data model expressed as flat JS objects",
 	"main": "",
 	"files": [
-		"index.d.ts"
+		"index.d.ts",
+		"LabelLanguages.d.ts",
+		"MonolingualLanguages.d.ts"
 	],
 	"scripts": {
 		"test": "npm run lint && tsc",
