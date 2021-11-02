@@ -141,7 +141,7 @@ export interface WikibaseItemSnak extends Snak {
 			"numeric-id": number;
 			id: string;
 		};
-		type: string;
+		type: "wikibase-entityid";
 	}
 	datatype: "wikibase-item";
 }
