@@ -11,13 +11,16 @@ export interface WikidataResponse {
 }
 
 export interface Item {
-	pageid: number;
-	ns: number;
-	title: string;
-	lastrevid: number;
-	modified: string;
+	pageid?: number;
+	ns?: number;
+	title?: string;
+
+	lastrevid?: number;
+	modified?: string; // ISO 8601 date string
+
 	type: "item";
-	id: string;
+	id: string; // Q-string
+
 	labels: Labels;
 	descriptions: Descriptions;
 	aliases: Aliases;
