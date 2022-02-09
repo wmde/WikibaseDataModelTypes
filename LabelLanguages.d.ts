@@ -8,6 +8,7 @@ export type LabelLanguages = 'aa' |
 'aeb-arab' | 
 'aeb-latn' | 
 'af' | 
+'agq' | 
 'ak' | 
 'aln' | 
 'als' | 
@@ -52,6 +53,7 @@ export type LabelLanguages = 'aa' |
 'bho' | 
 'bi' | 
 'bjn' | 
+'blk' | 
 'bm' | 
 'bn' | 
 'bo' | 
@@ -120,6 +122,7 @@ export type LabelLanguages = 'aa' |
 'fj' | 
 'fkv' | 
 'fo' | 
+'fon' | 
 'fr' | 
 'frc' | 
 'frp' | 
@@ -127,6 +130,7 @@ export type LabelLanguages = 'aa' |
 'fur' | 
 'fy' | 
 'ga' | 
+'gaa' | 
 'gag' | 
 'gan' | 
 'gan-hans' | 
@@ -134,6 +138,7 @@ export type LabelLanguages = 'aa' |
 'gcr' | 
 'gd' | 
 'gl' | 
+'gld' | 
 'glk' | 
 'gn' | 
 'gom' | 
@@ -145,6 +150,7 @@ export type LabelLanguages = 'aa' |
 'gsw' | 
 'gu' | 
 'guc' | 
+'gur' | 
 'guw' | 
 'gv' | 
 'ha' | 
@@ -159,6 +165,7 @@ export type LabelLanguages = 'aa' |
 'hr' | 
 'hrx' | 
 'hsb' | 
+'hsn' | 
 'ht' | 
 'hu' | 
 'hu-formal' | 
@@ -220,6 +227,7 @@ export type LabelLanguages = 'aa' |
 'ks-arab' | 
 'ks-deva' | 
 'ksh' | 
+'ksw' | 
 'ku' | 
 'ku-arab' | 
 'ku-latn' | 
@@ -254,6 +262,7 @@ export type LabelLanguages = 'aa' |
 'mad' | 
 'mai' | 
 'map-bms' | 
+'mcn' | 
 'mdf' | 
 'mg' | 
 'mh' | 
@@ -291,6 +300,7 @@ export type LabelLanguages = 'aa' |
 'niu' | 
 'nl' | 
 'nl-informal' | 
+'nmz' | 
 'nn' | 
 'no' | 
 'nod' | 
@@ -300,6 +310,7 @@ export type LabelLanguages = 'aa' |
 'nso' | 
 'nv' | 
 'ny' | 
+'nyn' | 
 'nys' | 
 'oc' | 
 'ojb' | 
@@ -357,6 +368,9 @@ export type LabelLanguages = 'aa' |
 'sdc' | 
 'sdh' | 
 'se' | 
+'se-fi' | 
+'se-no' | 
+'se-se' | 
 'sei' | 
 'ses' | 
 'sg' | 
@@ -444,6 +458,7 @@ export type LabelLanguages = 'aa' |
 'vi' | 
 'vls' | 
 'vmf' | 
+'vmw' | 
 'vo' | 
 'vot' | 
 'vro' | 
@@ -458,6 +473,7 @@ export type LabelLanguages = 'aa' |
 'xsy' | 
 'yi' | 
 'yo' | 
+'yrl' | 
 'yue' | 
 'za' | 
 'zea' | 

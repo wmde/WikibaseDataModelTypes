@@ -4,6 +4,7 @@ Typescript definitions for the Wikibase DataModel expressed as flat JS objects,
 as returned and accepted by Wikibase APIs like wbgetentities or wbeditentity.
 
 ## Scope
-
-For now, the definitions in this repository are very limited.
-Feel free to send pull requests for other data (value) types.
+- it supports all the features of wikidata items and properties
+- it has partial support for commons structured data
+- lexemes and senses are currently not Supported
+- additional information returned by the Wikimedia API is not modelled

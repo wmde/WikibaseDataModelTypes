@@ -10,6 +10,12 @@ export interface WikidataResponse {
 	};
 }
 
+export interface WikiCommonsResponse {
+	entities: {
+		[id: string]: Mediainfo;
+	};
+}
+
 export interface Item {
 	pageid?: number;
 	ns?: number;
@@ -26,6 +32,27 @@ export interface Item {
 	aliases: Aliases;
 	claims: StatementMap;
 	sitelinks: Sitelinks;
+}
+
+/**
+ * mediainfo is used in the structured data of wiki commons
+ * it is like a item but has some key differences like not having Aliases
+ * and having claims be names statements
+ */
+export interface Mediainfo {
+	pageid?: number;
+	ns?: number;
+	title?: string;
+
+	lastrevid?: number;
+	modified?: string; // ISO 8601 date string
+
+	type: "mediainfo";
+	id: string; // Q-string
+
+	labels: Labels;
+	descriptions: Descriptions;
+	statements: StatementMap;
 }
 
 export interface Labels {
@@ -118,7 +145,7 @@ export interface Snak {
 	property: string;
 	hash?: string,
 	datavalue?: Record<string, unknown>;
-	datatype: string;
+	datatype?: string;
 }
 
 export interface StringSnak extends Snak {
@@ -126,7 +153,7 @@ export interface StringSnak extends Snak {
 		value: string;
 		type: "string";
 	};
-	datatype: "string";
+	datatype?: "string";
 }
 
 export interface URLSnak extends Snak {
@@ -134,7 +161,7 @@ export interface URLSnak extends Snak {
 		value: string;
 		type: "string";
 	};
-	datatype: "url";
+	datatype?: "url";
 }
 
 export interface WikibaseItemSnak extends Snak {
@@ -146,7 +173,7 @@ export interface WikibaseItemSnak extends Snak {
 		};
 		type: "wikibase-entityid";
 	}
-	datatype: "wikibase-item";
+	datatype?: "wikibase-item";
 }
 
 export type CalendarModels = 'http://www.wikidata.org/entity/Q1985727' | 'http://www.wikidata.org/entity/Q1985786';
@@ -163,7 +190,7 @@ export interface TimeSnak extends Snak {
 		};
 		type: "time";
 	};
-	datatype: "time";
+	datatype?: "time";
 }
 
 export interface MonolingualTextSnak extends Snak {
@@ -174,7 +201,7 @@ export interface MonolingualTextSnak extends Snak {
 		};
 		type: "monolingualtext";
 	};
-	datatype: "monolingualtext";
+	datatype?: "monolingualtext";
 }
 
 export interface ExternalIdentifierSnak extends Snak {
@@ -182,7 +209,7 @@ export interface ExternalIdentifierSnak extends Snak {
 		value: string;
 		type: "string";
 	};
-	datatype: "external-id";
+	datatype?: "external-id";
 }
 
 export interface QuantitySnak extends Snak {
@@ -195,7 +222,7 @@ export interface QuantitySnak extends Snak {
 		};
 		type: "quantity"
 	};
-	datatype: "quantity";
+	datatype?: "quantity";
 }
 
 export interface GlobeCoordinateSnak extends Snak {
@@ -209,7 +236,7 @@ export interface GlobeCoordinateSnak extends Snak {
 		};
 		type: "globecoordinate";
 	};
-	datatype: "globe-coordinate";
+	datatype?: "globe-coordinate";
 }
 
 export interface CommonsMediaSnak extends Snak {
@@ -217,7 +244,7 @@ export interface CommonsMediaSnak extends Snak {
 		value: string
 		type: "string"
 	};
-	datatype: "commonsMedia";
+	datatype?: "commonsMedia";
 }
 
 export interface GeoShapeSnak extends Snak {
@@ -225,7 +252,7 @@ export interface GeoShapeSnak extends Snak {
 		value: string,
 		type: "string"
 	};
-	datatype: "geo-shape";
+	datatype?: "geo-shape";
 }
 
 export interface MathSnak extends Snak {
@@ -233,7 +260,7 @@ export interface MathSnak extends Snak {
 		value: string,
 		type: "string"
 	};
-	datatype: "math";
+	datatype?: "math";
 }
 
 export interface TabularDataSnak extends Snak {
@@ -241,7 +268,7 @@ export interface TabularDataSnak extends Snak {
 		value: string,
 		type: "string"
 	};
-	datatype: "tabular-data";
+	datatype?: "tabular-data";
 }
 
 export interface MusicalNotationSnak extends Snak {
@@ -249,7 +276,7 @@ export interface MusicalNotationSnak extends Snak {
 		value: string,
 		type: "string"
 	};
-	datatype: "musical-notation";
+	datatype?: "musical-notation";
 }
 
 export interface WikibasePropertySnak extends Snak {
@@ -261,5 +288,5 @@ export interface WikibasePropertySnak extends Snak {
 		},
 		"type": "wikibase-entityid"
 	};
-	datatype: "wikibase-property";
+	datatype?: "wikibase-property";
 }
